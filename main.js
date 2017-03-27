@@ -15,7 +15,7 @@ var _quotes = {
         ["I would NEVER Moch disabled. Shame!", proPublicaTweet("741983436865306627")],
         ["I will spill the beans on your wife", proPublicaTweet("712454697311928320")],
         ["Mitt Romney is a mixed up man who doesn't have a clue.", proPublicaTweet("710924145584771072")],
-        ["Lying Ted Cruz and leightweight chocker Marco Rubio", proPublicaTweet("")],
+        ["Lying Ted Cruz and leightweight chocker Marco Rubio", proPublicaTweet("703223661658963968")],
         ["In fact, I took her out furniture shopping.", NYT],
         ["I moved on her like a bitch.", NYT],
         ["Grab 'em by the pussy. You can do anything.", NYT],
