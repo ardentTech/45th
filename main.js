@@ -24,13 +24,23 @@ function filterNodes(nodes) {
 
 
 function getQuoteNode(quotes) {
-    var quote = quotes[Math.floor(Math.random() * quotes.length)],
+    var quote = getRandomQuote(quotes),
         span = buildSpan();
 
     span.style.cssText = WRAPPER_STYLES;
     span.appendChild(buildText(quote[0]));
     span.setAttribute("title", "Source: " + quote[1]);
     return span;
+}
+
+
+function getRandomQuote(quotes) {
+    if (quotes.fresh.length === 0) quotes.fresh.push(...quotes.stale);
+
+    var quote = quotes.fresh.splice(
+        Math.floor(Math.random() * quotes.fresh.length), 1)[0];
+    quotes.stale.push(quote);
+    return quote;
 }
 
 
