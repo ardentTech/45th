@@ -100,10 +100,12 @@ function incrementCounter(n) {
 
 
 function swapNodes(matches) {
+    var parentNodesToSkip = /script|title/i;
     matches.forEach(function(match) {
-        console.log(match.node.nodeValue);
-        match.node.parentNode.replaceChild(
-            getReplacementNode(match), match.node);
+        if (!parentNodesToSkip.test(match.node.parentNode.nodeName)) {
+            match.node.parentNode.replaceChild(
+                getReplacementNode(match), match.node);
+        }
     });
     incrementCounter(matches.length);
 }
