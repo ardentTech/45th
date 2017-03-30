@@ -9,5 +9,6 @@
           "js": ["data.js", "main.js"],
           "run_at": "document_end"
       }
-  ]
+  ],
+  "permissions": ["storage"]
 }

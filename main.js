@@ -92,11 +92,20 @@ function getTextNodes() {
 }
 
 
+function incrementCounter(n) {
+    chrome.storage.local.get({"swapCount": 0}, function(o) {
+        chrome.storage.local.set({"swapCount": (o.swapCount + n)});
+    });    
+}
+
+
 function swapNodes(matches) {
     matches.forEach(function(match) {
+        console.log(match.node.nodeValue);
         match.node.parentNode.replaceChild(
             getReplacementNode(match), match.node);
     });
+    incrementCounter(matches.length);
 }
 
 
