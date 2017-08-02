@@ -11,6 +11,14 @@ var proPublicaTweet = function(id) {
 var quotes = {
     trump: {
         fresh: [
+            ["This is more work than in my previous life.", "http://www.reuters.com/article/us-usa-trump-100days-idUSKBN17U0CA"],
+            ["I thought it would be easier.", "http://www.reuters.com/article/us-usa-trump-100days-idUSKBN17U0CA"],
+            ["I think we've done more than perhaps any president in the first 100 days.", "http://www.washingtonexaminer.com/full-interview-with-president-trump-on-his-first-100-days/article/2621516"],
+            ["I'd give us an A.", "http://www.washingtonexaminer.com/full-interview-with-president-trump-on-his-first-100-days/article/2621516"],
+            ["If Abe Lincoln came back to life, he would lose New York and he would lose California.", "https://apnews.com/c810d7de280a47e88848b0ac74690c83"],
+            ["President Xi [of China], we have a, like, a really great relationship.", "https://apnews.com/c810d7de280a47e88848b0ac74690c83"],
+            ["So I've been working on health care for 60 days...You know, we're very close.", "https://apnews.com/c810d7de280a47e88848b0ac74690c83"],
+            ["Hey, I’m a nationalist and a globalist. I’m both.", "https://www.wsj.com/articles/trump-says-nafta-partners-persuaded-him-to-keep-u-s-in-trade-pact-1493320127"],
             ["...you have to take out their families.", "http://www.cnn.com/2015/12/02/politics/donald-trump-terrorists-families/"],
             ["Mexico will pay for the wall!", proPublicaTweet("771299405563588608")],
             ["We will repeal and replace disastrous #Obamacare!", proPublicaTweet("764154460264394752")],
